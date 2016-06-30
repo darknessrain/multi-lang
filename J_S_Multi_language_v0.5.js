@@ -68,7 +68,7 @@ function changeNavBarUIWording(lang_index){
   //document.getElementById('lang_btn_1').innerHTML = Multi_Lang_Wording[lang_index];
 
   document.getElementById('change_dropdown_title').innerHTML =  Multi_Lang_Wording[lang_index]+'<b class="caret"></b>';
-  //document.getElementById('change1').innerHTML =  "Win";//Multi_Lang_Wording[lang_index];//NavLinkobj[1].NavLink1;
+
   return;
 }
 
@@ -99,9 +99,9 @@ Multi_Lang_Tag[2]="jp";
 
 //Multi_Lang_Wording 供介面顯示
 Multi_Lang_Wording = new Array();
-Multi_Lang_Wording[0]="繁體中文";
-Multi_Lang_Wording[1]="English";
-Multi_Lang_Wording[2]="日本語";
+Multi_Lang_Wording[0]="TWN - 繁體中文";
+Multi_Lang_Wording[1]="ENG - English";
+Multi_Lang_Wording[2]="JP - 日本語";
 
 //多語系網頁Title招呼語 (顯示在瀏覽TAB上)
 Multi_Lang_Title= new Array();
