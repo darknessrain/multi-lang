@@ -45,13 +45,14 @@ function chg_lang(lang_index){
 
 		}
 
-
+//主要功能1 : Multi-lang Title 根據 on_click 事件切換網頁標題
 function changeWebTitle(lang_index){
       //變更多語系網頁Title
       document.getElementsByTagName("title")[0].innerHTML = Multi_Lang_Title[lang_index];
       return;
 }
 
+//主要功能2 : 賦予Body 語系標籤，例如 TW,ENG,JP。以便讓不同的CSS樣式來切換背景圖片
 function changeCSSTag_Multi_Lang(lang_index){
     // jQuery 語法:
     //  $("body").removeClass("tw cn en").addClass($(this).data("資料名"));
@@ -62,6 +63,7 @@ function changeCSSTag_Multi_Lang(lang_index){
     return;
 }
 
+//主要功能3 : 使用DOM方法，更換下拉&Navbar顯示介面
 function changeNavBarUIWording(lang_index){
 
   //更改Drondown UI 語系顯示
