@@ -7,10 +7,10 @@
 "NavLink5" : ""
 },
 {
-"NavLink1": "動作原理",
-"NavLink2": "如何安裝",
-"NavLink3" : "規格",
-"NavLink4" : "產品支援",
+"NavLink1": "How It Works",
+"NavLink2": "How to Install",
+"NavLink3" : "Specific",
+"NavLink4" : "Support",
 "NavLink5" : ""
 },
 {
