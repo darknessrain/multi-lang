@@ -73,8 +73,7 @@ function changeNavBarUIWording(lang_index){
 }
 
 function changeAllNavBarUIWording(arr,lang_index){
-  var out="";
-  //out = arr[lang_index].NavLink1;
+
   document.getElementById('nav_link1_wording').innerHTML = arr[lang_index].NavLink1;
   document.getElementById('nav_link2_wording').innerHTML = arr[lang_index].NavLink2;
   document.getElementById('nav_link3_wording').innerHTML = arr[lang_index].NavLink3;
@@ -83,10 +82,6 @@ function changeAllNavBarUIWording(arr,lang_index){
 
   return;
 }
-
-
-
-
 
 
 
@@ -108,21 +103,6 @@ Multi_Lang_Title= new Array();
 Multi_Lang_Title[0]="歡迎來到EQL - PC Stick網站";
 Multi_Lang_Title[1]="Welcome to EQL - PC Stick";
 Multi_Lang_Title[2]="EQLへようこそ - PC Stick";
-
-//多語系Nav bar語言 ， 使用JSON 格式儲存 Nav Bar所需要的UI連結
-
-/*var LinkItems = '[{"NavLink1": "動作原理", "NavLink2": "如何安裝", "NavLink3" : "規格","NavLink4" : "產品支援","NavLink5" : ""}, //第一語言NAV BAR文字
-			      {"NavLink1": "How It Works", "NavLink2": "How To Install", "NavLink3" : "Specific","NavLink4" : "Support","NavLink5" : ""}, //第二語言NAV BAR文字
-            {"NavLink1": "使い方", "NavLink2": "インストール", "NavLink3" : "仕様","NavLink4" : "サポート","NavLink5" : ""}, //第三語言NAV BAR文字
-          ]';
-var jsonSum = LinkItems.length; */
-
-
-//
-
-
-
-
 
 
 //=====文字儲存區 END======
