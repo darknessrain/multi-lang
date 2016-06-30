@@ -40,7 +40,8 @@ function chg_lang(lang_index){
           changeAllNavBarUIWording(myArr);
           }
       };
-
+      xmlhttp.open("GET", url, true);
+      xmlhttp.send();
 
 		}
 
@@ -81,8 +82,7 @@ function changeAllNavBarUIWording(arr){
 
 
 
-xmlhttp.open("GET", url, true);
-xmlhttp.send();
+
 
 
 
