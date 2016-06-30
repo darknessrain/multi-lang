@@ -66,7 +66,7 @@ function changeNavBarUIWording(lang_index){
 
   //更改Drondown UI 語系顯示
   //document.getElementById('lang_btn_1').innerHTML = Multi_Lang_Wording[lang_index];
-  var NavLinkobj = JSON.parse(json);
+
   document.getElementById('change_dropdown_title').innerHTML =  Multi_Lang_Wording[lang_index]+'<b class="caret"></b>';
   //document.getElementById('change1').innerHTML =  "Win";//Multi_Lang_Wording[lang_index];//NavLinkobj[1].NavLink1;
   return;
