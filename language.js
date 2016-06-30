@@ -74,8 +74,12 @@ function changeNavBarUIWording(lang_index){
 
 function changeAllNavBarUIWording(arr,lang_index){
   var out="";
-  out = arr[lang_index].NavLink1;
-  document.getElementById('change1').innerHTML = out;
+  //out = arr[lang_index].NavLink1;
+  document.getElementById('nav_link1_wording').innerHTML = arr[lang_index].NavLink1;
+  document.getElementById('nav_link2_wording').innerHTML = arr[lang_index].NavLink2;
+  document.getElementById('nav_link3_wording').innerHTML = arr[lang_index].NavLink3;
+  document.getElementById('nav_link4_wording').innerHTML = arr[lang_index].NavLink4;
+  document.getElementById('nav_link5_wording').innerHTML = arr[lang_index].NavLink5;
 
   return;
 }

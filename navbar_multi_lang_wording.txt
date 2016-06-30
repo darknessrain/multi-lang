@@ -4,20 +4,20 @@
 "NavLink2": "如何安裝",
 "NavLink3" : "規格",
 "NavLink4" : "產品支援",
-"NavLink5" : ""
+"NavLink5" : "馬上購買"
 },
 {
 "NavLink1": "How It Works",
 "NavLink2": "How to Install",
 "NavLink3" : "Specific",
 "NavLink4" : "Support",
-"NavLink5" : ""
+"NavLink5" : "Order"
 },
 {
 "NavLink1": "使い方",
 "NavLink2": "インストール",
 "NavLink3" : "仕様",
 "NavLink4" : "サポート",
-"NavLink5" : ""
+"NavLink5" : "購入"
 }
 ]
