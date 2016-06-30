@@ -31,7 +31,8 @@ function chg_lang(lang_index){
 
 
       //讀外部JSON檔案
-      var xmlhttp = new XMLHttpRequest();
+      var xmlhttp;
+      xmlhttp = new XMLHttpRequest();
       var url = "navbar_multi_lang_wording.txt";
 
       xmlhttp.onreadystatechange = function() {
