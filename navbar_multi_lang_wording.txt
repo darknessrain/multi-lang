@@ -1,0 +1,23 @@
+[
+{
+"NavLink1": "動作原理",
+"NavLink2": "如何安裝",
+"NavLink3" : "規格",
+"NavLink4" : "產品支援",
+"NavLink5" : ""
+},
+{
+"NavLink1": "動作原理",
+"NavLink2": "如何安裝",
+"NavLink3" : "規格",
+"NavLink4" : "產品支援",
+"NavLink5" : ""
+},
+{
+"NavLink1": "使い方",
+"NavLink2": "インストール",
+"NavLink3" : "仕様",
+"NavLink4" : "サポート",
+"NavLink5" : ""
+}
+]

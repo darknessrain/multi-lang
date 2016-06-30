@@ -1,0 +1,75 @@
+<html>
+
+<head>
+<title>多國語言測試...</title>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<script type="text/javascript" src="language.js"></script>
+<script>
+
+function chg_lan(lan_index)
+{
+	var myLangArray;
+
+	switch(lan_index)
+	{
+		//必須要有language.js才行...
+		case 1:
+			myLangArray = L_chain;
+			break;
+		case 2:
+			myLangArray = L_japan;
+			break;
+		case 3:
+			myLangArray = L_korean;
+			break;
+		case 4:
+			myLangArray = L_vietnam;
+			break;
+		default : //taiwan
+			myLangArray = L_taiwan;
+			break;
+
+	}
+
+	reloadwording();
+
+}
+
+</script>
+</head>
+
+<body>
+<button onclick="chg_lan(0)">taiwan</button>
+<button onclick="chg_lan(1)">chain</button>
+<button onclick="chg_lan(2)">japan</button>
+<button onclick="chg_lan(3)">korean</button>
+<button onclick="chg_lan(4)">Vietnam</button><hr>
+<hr>
+<table border="1" width="100%" id="table1">
+	<tr>
+		<td><span id="L0"></span></td>
+	</tr>
+	<tr>
+		<td><span id="L1"></span></td>
+	</tr>
+	<tr>
+		<td><span id="L2"></span></td>
+	</tr>
+	<tr>
+		<td><span id="L3"></span></td>
+	</tr>
+</table>
+
+
+<script>
+//預設為 中文
+chg_lan(0);
+
+</script>
+
+</body>
+
+</html>

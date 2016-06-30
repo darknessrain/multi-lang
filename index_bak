@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>多國語言測試...</title>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<script type="text/javascript" src="language.js"></script>
+<script>
+
+function chg_lan(lan_index)
+{
+	var myLangArray;
+
+	switch(lan_index)
+	{
+		//必須要有language.js才行...
+		case 1:
+			myLangArray = L_chain;
+			break;
+		case 2:
+			myLangArray = L_japan;
+			break;
+		case 3:
+			myLangArray = L_korean;
+			break;
+		case 4:
+			myLangArray = L_vietnam;
+			break;
+		default : //taiwan
+			myLangArray = L_taiwan;
+			break;
+
+	}
+
+	reloadwording();
+
+}
+
+</script>
+</head>
+
+<body>
+<button onclick="chg_dom()">改變語文</button>
+<button onclick="chg_lan(1)">chain</button>
+
+<script>
+//預設為 中文
+		chg_dom(){
+			document.getElementById('change1').innerHTML = "English Now"
+		}
+</script>
+
+<section>
+	<div>
+			<h1 id="change1">現在是中文</h1>
+
+	</div>
+
+
+</section>
+
+</body>
+
+</html>
