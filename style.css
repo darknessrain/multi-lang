@@ -5,21 +5,21 @@
 
 }
 
-.tw > .img_main{
+.tw .img_main{
   background-image: url('images/cht_maserati.jpg');
   background-size: cover;
   min-height: 50em;
 
 }
 
-.eng > .img_main{
+.eng .img_main{
   background-image: url('images/eng_maserati.jpg');
   background-size: cover;
   min-height: 50em;
 
 }
 
-.jp > .img_main{
+.jp .img_main{
   background-image: url('images/jp_maserati.jpg');
   background-size: cover;
   min-height: 50em;
