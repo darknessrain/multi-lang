@@ -37,7 +37,7 @@ function chg_lang(lang_index){
       xmlhttp.onreadystatechange = function() {
       if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
           var myArr = JSON.parse(xmlhttp.responseText);
-          changeAllNavBarUIWording(myArr);
+          changeAllNavBarUIWording(myArr,lang_index);
           }
       };
       xmlhttp.open("GET", url, true);
@@ -72,7 +72,7 @@ function changeNavBarUIWording(lang_index){
   return;
 }
 
-function changeAllNavBarUIWording(arr){
+function changeAllNavBarUIWording(arr,lang_index){
   var out="";
   out = arr[lang_index].NavLink1;
   document.getElementById('change1').innerHTML = out;
