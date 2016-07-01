@@ -44,7 +44,7 @@ function chg_lang(lang_index){
       xmlhttp.open("GET", url, true);
       xmlhttp.send();
 
-      detectUserLang();
+
 
 		}
 
