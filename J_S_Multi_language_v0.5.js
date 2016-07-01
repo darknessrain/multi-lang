@@ -106,6 +106,7 @@ switch (currentBrowserLang) {
 
   default:
         chg_lang(1);
+    break;
 }
 
 
