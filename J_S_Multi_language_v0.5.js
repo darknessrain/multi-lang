@@ -129,8 +129,8 @@ Multi_Lang_Tag[2]="jp";
 
 //Multi_Lang_Wording 供介面顯示
 Multi_Lang_Wording = new Array();
-Multi_Lang_Wording[0]="TWN - 繁體中文";
-Multi_Lang_Wording[1]="ENG - English";
+Multi_Lang_Wording[0]="TW - 繁體中文";
+Multi_Lang_Wording[1]="EN - English";
 Multi_Lang_Wording[2]="JP - 日本語";
 
 //多語系網頁Title招呼語 (顯示在瀏覽TAB上)
