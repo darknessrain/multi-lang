@@ -44,6 +44,8 @@ function chg_lang(lang_index){
       xmlhttp.open("GET", url, true);
       xmlhttp.send();
 
+      detectUserLang();
+
 		}
 
 //主要功能1 : Multi-lang Title 根據 on_click 事件切換網頁標題
@@ -51,6 +53,8 @@ function changeWebTitle(lang_index){
       //變更多語系網頁Title
       document.getElementsByTagName("title")[0].innerHTML = Multi_Lang_Title[lang_index];
       return;
+
+
 }
 
 //主要功能2 : 賦予Body 語系標籤，例如 TW,ENG,JP。以便讓不同的CSS樣式來切換背景圖片
@@ -86,29 +90,32 @@ function changeAllNavBarUIWording(arr,lang_index){
   return;
 }
 
-var tempLang = window.navigator.userLanguage || window.navigator.language ;
-var currentBrowserLang = tempLang.toLowerCase();
-console.log(currentBrowserLang);
 
-switch (currentBrowserLang) {
-  case "zh-tw":
-        chg_lang(0);
-    break;
-  case "zh-cn":
-        chg_lang(0);
-    break;
-  case "zh-hk":
-        chg_lang(0);
-    break;
-  case "ja":
-        chg_lang(2);
-    break;
+function detectUserLang(){
 
-  default:
-        chg_lang(1);
-    break;
+    var tempLang = window.navigator.userLanguage || window.navigator.language ;
+    var currentBrowserLang = tempLang.toLowerCase();
+    console.log(currentBrowserLang);
+
+    switch (currentBrowserLang) {
+      case "zh-tw":
+            callback:chg_lang(0);
+        break;
+      case "zh-cn":
+            chg_lang(0);
+        break;
+      case "zh-hk":
+            chg_lang(0);
+        break;
+      case "ja":
+            chg_lang(2);
+        break;
+
+      default:
+            chg_lang(1);
+        break;
+    }
 }
-
 
 
 
