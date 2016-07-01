@@ -1,81 +1,108 @@
-<!DOCTYPE html> 
-<html> 
-    <head> 
-        <title>多國語言測試...</title>         
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
-        <script type="text/javascript" src="J_S_Multi_language_v0.5.js"></script>         
-        <!-- Bootstrap -->         
-        <link href="css/bootstrap.min.css" rel="stylesheet"> 
-        <link href="style.css" rel="stylesheet"> 
-        <!-- HTML5 shim and Respond.js 讓 IE8 支援 HTML5 元素與媒體查詢 -->         
-        <!-- 警告：Respond.js 無法在 file:// 協定下運作 -->         
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>多國語言測試...</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <script type="text/javascript" src="J_S_Multi_language_v0.5.js"></script>
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js 讓 IE8 支援 HTML5 元素與媒體查詢 -->
+        <!-- 警告：Respond.js 無法在 file:// 協定下運作 -->
         <!--[if lt IE 9]>
 					<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 					<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-				<![endif]-->         
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>         
-        <script src="js/bootstrap.min.js"></script>         
-    </head>     
-    <body id="bodyid" class=""> 
-        <nav class="navbar navbar-default" role="navigation"> 
-            <div class="container-fluid"> 
-                <div class="navbar-header"> 
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> 
-                        <span class="sr-only">Toggle navigation</span> 
-                        <span class="icon-bar"></span> 
-                        <span class="icon-bar"></span> 
-                        <span class="icon-bar"></span> 
-                    </button>                     
-                    <a class="navbar-brand" href="#">Brand</a> 
-                </div>                 
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
-                    <ul class="nav navbar-nav"> 
-</ul>                     
-                    <ul class="nav navbar-nav navbar-right"> 
+				<![endif]-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+
+                        var tempLang = window.navigator.userLanguage || window.navigator.language ;
+                        var currentBrowserLang = tempLang.toLowerCase();
+                        console.log(currentBrowserLang);
+
+                        switch (currentBrowserLang) {
+                          case "zh-tw":
+                                chg_lang(0);
+                            break;
+                          case "zh-cn":
+                                chg_lang(0);
+                            break;
+                          case "zh-hk":
+                                chg_lang(0);
+                            break;
+                          case "ja":
+                                chg_lang(2);
+                            break;
+
+                          default:
+                                chg_lang(1);
+                        }
+
+
+        </script>
+
+    </head>
+    <body id="bodyid" class="">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Brand</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+</ul>
+                    <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="#" id="nav_link1_wording">動作原理</a> 
-                        </li>                         
-                        <li> 
-                            <a href="#" id="nav_link2_wording">如何安裝</a> 
-                        </li>                         
-                        <li> 
-                            <a href="#" id="nav_link3_wording">規格</a> 
-                        </li>                         
-                        <li> 
-                            <a href="#" id="nav_link4_wording">產品支援</a> 
-                        </li>                         
-                        <li class="dropdown"> 
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="change_dropdown_title">TWN - 繁體中文<b class="caret"></b></a> 
-                            <ul class="dropdown-menu"> 
+                            <a href="#" id="nav_link1_wording">動作原理</a>
+                        </li>
+                        <li>
+                            <a href="#" id="nav_link2_wording">如何安裝</a>
+                        </li>
+                        <li>
+                            <a href="#" id="nav_link3_wording">規格</a>
+                        </li>
+                        <li>
+                            <a href="#" id="nav_link4_wording">產品支援</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="change_dropdown_title">TWN - 繁體中文<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
                                 <li>
-                                    <a href="#" onclick="chg_lang(0)">TWN - 繁體中文</a> 
-                                </li>                                 
+                                    <a href="#" onclick="chg_lang(0)">TWN - 繁體中文</a>
+                                </li>
                                 <li>
-                                    <a href="#" onclick="chg_lang(1)">ENG - English</a> 
-                                </li>                                 
-                                <li> 
-                                    <a href="#" onclick="chg_lang(2)">JP - 日本語</a> 
-                                </li>                                 
-                            </ul>                             
-                        </li>                         
-                        <li> 
-                            <button type="button" value="order" onclick="window.open('https://www.91app.com/')" class="btn button navbar-btn btn_order" id="nav_link5_wording">馬上購買</button>                             
-                        </li>                         
-                    </ul>                     
-                </div>                 
-            </div>             
-        </nav>         
-        <button id="lang_btn_1" onclick="chg_lang(0)">設為中文</button>         
-        <button onclick="chg_lang(1)">設為英文</button>         
-        <button onclick="chg_lang(2)">設為日文</button>         
-        <section class="counter-fluid"> 
-            <div class="img_main"> 
-</div>             
-        </section>         
-        <section> 
-            <div class="cont1"> 
-                <h4 id="section1_wording_1">Page Test by BU1 Design Team.</h4> 
-            </div>             
-        </section>         
-    </body>     
+                                    <a href="#" onclick="chg_lang(1)">ENG - English</a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="chg_lang(2)">JP - 日本語</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button type="button" value="order" onclick="window.open('https://www.91app.com/')" class="btn button navbar-btn btn_order" id="nav_link5_wording">馬上購買</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <button id="lang_btn_1" onclick="chg_lang(0)">設為中文</button>
+        <button onclick="chg_lang(1)">設為英文</button>
+        <button onclick="chg_lang(2)">設為日文</button>
+        <section class="counter-fluid">
+            <div class="img_main">
+</div>
+        </section>
+        <section>
+            <div class="cont1">
+                <h4 id="section1_wording_1">Page Test by BU1 Design Team.</h4>
+            </div>
+        </section>
+    </body>
 </html>
