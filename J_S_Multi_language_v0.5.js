@@ -86,6 +86,30 @@ function changeAllNavBarUIWording(arr,lang_index){
   return;
 }
 
+var tempLang = window.navigator.userLanguage || window.navigator.language ;
+var currentBrowserLang = tempLang.toLowerCase();
+console.log(currentBrowserLang);
+
+switch (currentBrowserLang) {
+  case "zh-tw":
+        chg_lang(0);
+    break;
+  case "zh-cn":
+        chg_lang(0);
+    break;
+  case "zh-hk":
+        chg_lang(0);
+    break;
+  case "ja":
+        chg_lang(2);
+    break;
+
+  default:
+        chg_lang(1);
+}
+
+
+
 
 
 //=====文字儲存區======
