@@ -2,7 +2,7 @@
 //Coding by Jerry Shih @ Quanta Computer Inc. - 2016/06/30 ver 0.5
 //使用時必須在HTML HEAD標籤掛入本 J_S_Multi_language_v*.*.js檔案
 //主要功能1 : Multi-lang Title 根據 on_click 事件切換網頁標題
-//主要功能2 : 賦予Body 語系標籤，例如 TW,ENG,JP。以便讓不同的CSS樣式來切換背景圖片
+//主要功能2 : 賦予Body 語系標籤，例如 TW,ENG,JP。以便讓不同的CSS樣式來切換背景圖片、甚至文字
 //主要功能3 : 使用DOM方法，更換下拉顯示介面
 //主要功能4 : 使用DOM方法，依照語系更改文件內的文字
 
