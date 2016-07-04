@@ -99,10 +99,10 @@ function hiddenOtherLanguage(lang_index){
           var i;
           for (i = 0;i < style_en.length; i++) {
             console.log(style_en[i]);
-            style_en[i]..display = block;
-            style_en[i]..overflow = hidden;
-            style_en[i]..width = 0;
-            style_en[i]..height = 0;
+            style_en[i].display = block;
+            style_en[i].overflow = hidden;
+            style_en[i].width = 0;
+            style_en[i].height = 0;
             }
       break;
     case 1:
