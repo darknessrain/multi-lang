@@ -121,7 +121,7 @@ function hiddenOtherLanguage(lang_index){
         //style_en[i].style.cssFloat="left";
         style_en[i].style.textIndent  = "-9999px";
         style_en[i].style.whiteSpace = "nowrap";
-        style_en[i].style.display = "inline";
+
         //style_en[i].style.display ="block";
         //style_en[i].style.position="relative";
         //style_en[i].style.overflow = "hidden";
@@ -139,7 +139,7 @@ function hiddenOtherLanguage(lang_index){
           //style_jp[i].style.float=left;
           style_jp[i].style.textIndent = "-9999px";
           style_jp[i].style.whiteSpace = "nowrap";
-          style_jp[i].style.display = "inline";
+
           //style_jp[i].style.display = "block";
           //style_jp[i].style.overflow = "hidden";
           //style_jp[i].style.width = 0;
@@ -154,7 +154,7 @@ function hiddenOtherLanguage(lang_index){
             //style_tw[i].style.float=left;
             style_tw[i].style.textIndent  = "-9999px";
             style_tw[i].style.whiteSpace = "nowrap";
-            style_tw[i].style.display = "inline";
+          
 
             //style_tw[i].style.display = "block";
             //style_tw[i].style.overflow = "hidden";
@@ -168,12 +168,14 @@ function hiddenOtherLanguage(lang_index){
           var i;
           for (i = 0;i < style_tw.length; i++) {
                   style_tw[i].style.textIndent  ="0px";
+                  style_tw[i].style.display = "inline";
               }
             }
     function showEnglish(){
           var i;
           for (i = 0;i < style_en.length; i++) {
                   style_en[i].style.textIndent  ="0px";
+                  style_en[i].style.display = "inline";
               }
             }
 
@@ -181,6 +183,7 @@ function hiddenOtherLanguage(lang_index){
           var i;
           for (i = 0;i < style_jp.length; i++) {
                   style_jp[i].style.textIndent  ="0px";
+                  style_jp[i].style.display = "inline";
               }
             }
 
