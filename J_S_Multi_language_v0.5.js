@@ -100,14 +100,17 @@ function hiddenOtherLanguage(lang_index){
     case 0:
       hideEnglish();
       hideJapan();
+      showTChinese();
       break;
     case 1:
       hideTChinese();
       hideJapan();
+      showEnglish();
       break;
     case 2:
       hideEnglish();
       hideTChinese();
+      showJapan();
       break;
     default:
 
@@ -130,10 +133,10 @@ function hiddenOtherLanguage(lang_index){
     function hideJapan(){
         var i;
         for (i = 0;i < style_jp.length; i++) {
-          /*console.log(style_jp[i]);
-          style_jp[i].style.float=left;
-          style_jp[i].style.textIndent = -9999;
-          */
+          //console.log(style_jp[i]);
+          //style_jp[i].style.float=left;
+          style_jp[i].style.textIndent = "-9999px";
+
           //style_jp[i].style.display = "block";
           //style_jp[i].style.overflow = "hidden";
           //style_jp[i].style.width = 0;
@@ -144,9 +147,9 @@ function hiddenOtherLanguage(lang_index){
     function hideTChinese(){
           var i;
           for (i = 0;i < style_tw.length; i++) {
-            /*console.log(style_tw[i]);
-            style_tw[i].style.float=left;
-            style_tw[i].style.textIndent  = -9999;*/
+            //console.log(style_tw[i]);
+            //style_tw[i].style.float=left;
+            style_tw[i].style.textIndent  = "-9999px";
 
 
             //style_tw[i].style.display = "block";
@@ -157,6 +160,25 @@ function hiddenOtherLanguage(lang_index){
 
             }
           }
+    function showTChinese(){
+          var i;
+          for (i = 0;i < style_tw.length; i++) {
+                  style_tw[i].style.textIndent  ="0px";
+              }
+            }
+    function showEnglish(){
+          var i;
+          for (i = 0;i < style_en.length; i++) {
+                  style_en[i].style.textIndent  ="0px";
+              }
+            }
+
+    function showJapan(){
+          var i;
+          for (i = 0;i < style_jp.length; i++) {
+                  style_jp[i].style.textIndent  ="0px";
+              }
+            }
 
   }
 
