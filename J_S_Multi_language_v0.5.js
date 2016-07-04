@@ -90,12 +90,27 @@ function changeAllNavBarUIWording(arr,lang_index){
   return;
 }
 
-function hiddenOtherLanguage(){
+function hiddenOtherLanguage(lang_index){
 
-  document.getElementsByTagName("en_wording").style.display = block;
-  document.getElementsByTagName("en_wording").style.overflow = hidden;
-  document.getElementsByTagName("en_wording").style.width = 0;
-  document.getElementsByTagName("en_wording").style.height = 0;
+  switch (lang_index) {
+    case 0:
+          var style_en = document.getElementsByTagName("en_wording").style;
+          console.log(style_en);
+          style_en.display = block;
+          style_en.overflow = hidden;
+          style_en.width = 0;
+          style_en.height = 0;
+      break;
+    case 1:
+
+      break;
+    case 2:
+
+      break;
+    default:
+
+  }
+
 
   return;
 
