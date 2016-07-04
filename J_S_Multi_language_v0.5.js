@@ -100,8 +100,8 @@ function hiddenOtherLanguage(lang_index){
           var i;
           for (i = 0;i < styleen.length; i++) {
             console.log(styleen[i]);
-            styleen[i].style.display = block;
-            styleen[i].style.overflow = hidden;
+            styleen[i].style.display = "block";
+            styleen[i].style.overflow = "hidden";
             styleen[i].style.width = 0;
             styleen[i].style.height = 0;
             }
