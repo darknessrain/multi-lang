@@ -93,18 +93,17 @@ function changeAllNavBarUIWording(arr,lang_index){
 function hiddenOtherLanguage(lang_index){
 
   var styleen = document.getElementsByClassName('enwording');
-  console.log(styleen.length);
-/*
+
   switch (lang_index) {
     case 0:
 
           var i;
           for (i = 0;i < styleen.length; i++) {
             console.log(styleen[i]);
-            styleen[i].display = block;
-            styleen[i].overflow = hidden;
-            styleen[i].width = 0;
-            styleen[i].height = 0;
+            styleen[i].style.display = block;
+            styleen[i].style.overflow = hidden;
+            styleen[i].style.width = 0;
+            styleen[i].style.height = 0;
             }
       break;
     case 1:
@@ -115,7 +114,7 @@ function hiddenOtherLanguage(lang_index){
       break;
     default:
 
-  } */
+  }
 
 
   return;
