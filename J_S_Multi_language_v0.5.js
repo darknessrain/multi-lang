@@ -93,26 +93,56 @@ function changeAllNavBarUIWording(arr,lang_index){
 function hiddenOtherLanguage(lang_index){
 
   var style_en = document.getElementsByClassName('en_wording');
+  var style_tw = document.getElementsByClassName('tw_wording');
+  var style_jp = document.getElementsByClassName('jp_wording');
 
   switch (lang_index) {
     case 0:
-
-          var i;
-          for (i = 0;i < style_en.length; i++) {
-            console.log(style_en[i]);
-            style_en[i].style.display = "block";
-            style_en[i].style.overflow = "hidden";
-            style_en[i].style.width = 0;
-            style_en[i].style.height = 0;
-            }
+      hideEnglish();
+      hideJapan();
       break;
     case 1:
-
+      hideTChinese();
+      hideJapan();
       break;
     case 2:
-
+      hideEnglish();
+      hideTChinese();
       break;
     default:
+
+    function hideEnglish(){
+      var i;
+      for (i = 0;i < style_en.length; i++) {
+        console.log(style_en[i]);
+        style_en[i].style.display = "block";
+        style_en[i].style.overflow = "hidden";
+        style_en[i].style.width = 0;
+        style_en[i].style.height = 0;
+        }
+      }
+
+    function hideJapan(){
+        var i;
+        for (i = 0;i < style_jp.length; i++) {
+          console.log(style_jp[i]);
+          style_jp[i].style.display = "block";
+          style_jp[i].style.overflow = "hidden";
+          style_jp[i].style.width = 0;
+          style_jp[i].style.height = 0;
+          }
+        }
+
+    function hideTChinese(){
+          var i;
+          for (i = 0;i < style_tw.length; i++) {
+            console.log(style_tw[i]);
+            style_tw[i].style.display = "block";
+            style_tw[i].style.overflow = "hidden";
+            style_tw[i].style.width = 0;
+            style_tw[i].style.height = 0;
+            }
+          }
 
   }
 
