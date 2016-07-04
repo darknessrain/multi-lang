@@ -115,21 +115,25 @@ function hiddenOtherLanguage(lang_index){
       var i;
       for (i = 0;i < style_en.length; i++) {
         console.log(style_en[i]);
-        style_en[i].style.display = "block";
-        style_en[i].style.overflow = "hidden";
+        style_en[i].style.text-indent = -9999;
+        /*style_en[i].style.overflow = "hidden";
         style_en[i].style.width = 0;
-        style_en[i].style.height = 0;
+        style_en[i].style.height = 0;*/
         }
+
+
       }
 
     function hideJapan(){
         var i;
         for (i = 0;i < style_jp.length; i++) {
           console.log(style_jp[i]);
+          style_jp[i].style.text-indent = -9999;
+          /*
           style_jp[i].style.display = "block";
           style_jp[i].style.overflow = "hidden";
           style_jp[i].style.width = 0;
-          style_jp[i].style.height = 0;
+          style_jp[i].style.height = 0;*/
           }
         }
 
@@ -137,10 +141,14 @@ function hiddenOtherLanguage(lang_index){
           var i;
           for (i = 0;i < style_tw.length; i++) {
             console.log(style_tw[i]);
+            style_tw[i].style.text-indent = -9999;
+
+            /*
             style_tw[i].style.display = "block";
             style_tw[i].style.overflow = "hidden";
             style_tw[i].style.width = 0;
             style_tw[i].style.height = 0;
+            */
             }
           }
 
