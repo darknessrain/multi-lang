@@ -115,9 +115,9 @@ function hiddenOtherLanguage(lang_index){
       var i;
       for (i = 0;i < style_en.length; i++) {
         console.log(style_en[i]);
-        style_en[i].style.cssFloat="left";
+        //style_en[i].style.cssFloat="left";
         style_en[i].style.textIndent  = "-9999px";
-        style_en[i].style.display ="block";
+        //style_en[i].style.display ="block";
         //style_en[i].style.position="relative";
         //style_en[i].style.overflow = "hidden";
         //style_en[i].style.width = 0;
