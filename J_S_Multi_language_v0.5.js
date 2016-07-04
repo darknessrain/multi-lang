@@ -115,6 +115,7 @@ function hiddenOtherLanguage(lang_index){
       var i;
       for (i = 0;i < style_en.length; i++) {
         console.log(style_en[i]);
+        style_en[i].style.float=left;
         style_en[i].style.textIndent  = -9999;
         /*style_en[i].style.overflow = "hidden";
         style_en[i].style.width = 0;
@@ -128,6 +129,7 @@ function hiddenOtherLanguage(lang_index){
         var i;
         for (i = 0;i < style_jp.length; i++) {
           console.log(style_jp[i]);
+          style_jp[i].style.float=left;
           style_jp[i].style.textIndent = -9999;
           /*
           style_jp[i].style.display = "block";
@@ -141,6 +143,7 @@ function hiddenOtherLanguage(lang_index){
           var i;
           for (i = 0;i < style_tw.length; i++) {
             console.log(style_tw[i]);
+            style_tw[i].style.float=left;
             style_tw[i].style.textIndent  = -9999;
 
             /*
