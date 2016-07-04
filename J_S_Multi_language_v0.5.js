@@ -95,11 +95,15 @@ function hiddenOtherLanguage(lang_index){
   switch (lang_index) {
     case 0:
           var style_en = document.getElementsByClassName("en_wording").style;
-          console.log(style_en);
-          style_en.display = block;
-          style_en.overflow = hidden;
-          style_en.width = 0;
-          style_en.height = 0;
+
+          var i;
+          for (i = 0;i < s.length; i++) {
+            console.log(style_en[i]);
+            style_en[i]..display = block;
+            style_en[i]..overflow = hidden;
+            style_en[i]..width = 0;
+            style_en[i]..height = 0;
+            }
       break;
     case 1:
 
