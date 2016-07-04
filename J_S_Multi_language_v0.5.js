@@ -44,7 +44,7 @@ function chg_lang(lang_index){
       xmlhttp.open("GET", url, true);
       xmlhttp.send();
 
-
+      hiddenOtherLanguage();
 
 		}
 
@@ -88,6 +88,22 @@ function changeAllNavBarUIWording(arr,lang_index){
   document.getElementById('nav_link5_wording').innerHTML = arr[lang_index].NavLink5;
 
   return;
+}
+
+function hiddenOtherLanguage(){
+
+  document.getElementsByTagName("en_wording").style.display = block;
+  document.getElementsByTagName("en_wording").style.overflow = hidden;
+  document.getElementsByTagName("en_wording").style.width = 0;
+  document.getElementsByTagName("en_wording").style.height = 0;
+
+  return;
+
+  //display:block;
+　//overflow:hidden;
+　//width:0;
+　//height:0;
+
 }
 
 
