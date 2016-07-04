@@ -92,9 +92,10 @@ function changeAllNavBarUIWording(arr,lang_index){
 
 function hiddenOtherLanguage(lang_index){
 
+  var styleen = document.getElementsByClassName('enwording').style;
+
   switch (lang_index) {
     case 0:
-          var styleen = document.getElementsByClassName("enwording").style;
 
           var i;
           for (i = 0;i < styleen.length; i++) {
